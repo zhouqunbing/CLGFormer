@@ -1,8 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-.. codeauthor:: Mona Koehler <mona.koehler@tu-ilmenau.de>
-.. codeauthor:: Daniel Seichter <daniel.seichter@tu-ilmenau.de>
-"""
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '1'
 
