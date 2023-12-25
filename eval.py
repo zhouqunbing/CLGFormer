@@ -1,11 +1,6 @@
 # -*- coding: utf-8 -*-
-"""
-.. codeauthor:: Mona Koehler <mona.koehler@tu-ilmenau.de>
-.. codeauthor:: Daniel Seichter <daniel.seichter@tu-ilmenau.de>
-"""
 import argparse
 import os
-
 import numpy as np
 import torch
 import torch.nn.functional as F
@@ -123,7 +118,7 @@ if __name__ == '__main__':
                 label_orig = sample['label_orig'].to(device)
 
                 _,h, w = label_orig.shape
-
+                
                 predicts = torch.zeros((3, 40, h, w), requires_grad=False).to(device)
                 # eval_scales = [0.75, 0.75, 0.75, 1,   1,    1, 1.25, 1.25, 1.5, 1.5, 1.75, 1.75]
                 eval_scales = [1]
