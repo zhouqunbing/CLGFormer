@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-.. codeauthor:: Mona Koehler <mona.koehler@tu-ilmenau.de>
-.. codeauthor:: Daniel Seichter <daniel.seichter@tu-ilmenau.de>
-
 This code is partially adapted from RedNet
 (https://github.com/JindongJiang/RedNet/blob/master/RedNet_data.py)
 """
