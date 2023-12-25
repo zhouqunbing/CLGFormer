@@ -83,7 +83,7 @@ def _fast_hist(label_true, label_pred, n_class):
 if __name__ == '__main__':
     # arguments
     parser = ArgumentParserRGBDSegmentation(
-        description='Efficient RGBD Indoor Sematic Segmentation (Evaluation)',
+        description='cross-level-guided transformer for rgb-d semantic segmentation (Evaluation)',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.set_common_args()
     parser.add_argument('--ckpt_path', type=str,
@@ -246,7 +246,7 @@ if __name__ == '__main__':
 
 #         # 保存为txt形式
 #         np.set_printoptions(threshold=sys.maxsize)
-#         with open('/root/ESANet/hook/channel.txt', 'w') as q:
+#         with open('/root/hook/channel.txt', 'w') as q:
 #             q.write(str(tensor_10_twowei))
 #             q.write('\n')
 
@@ -254,8 +254,8 @@ if __name__ == '__main__':
 #         color, gray = colored_depthmap(tensor_10_twowei)
 #         colormap = Image.fromarray(color.astype('uint8'))
 #         gray2 = Image.fromarray(gray.astype('uint8'))
-#         colormap.save('/root/ESANet/hook/colormap{}.png'.format(i))
-#         gray2.save('/root/ESANet/hook/gray{}.png'.format(i))
+#         colormap.save('/root/hook/colormap{}.png'.format(i))
+#         gray2.save('/root/hook/gray{}.png'.format(i))
 # #################################################################################
 
 #     print("Done")
