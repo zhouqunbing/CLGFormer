@@ -15,10 +15,10 @@ from timm.models.layers import DropPath, trunc_normal_
 from torch.nn import Softmax, Conv2d, LayerNorm
 from src.models.resnet import ResNet34
 import warnings
-from src.models.rgb_depth_fusion import FeatureRectifyModule
-from src.models.encoder_decoder import CCT
-from src.models.sct import SCT
-from src.models.confidence import CA
+from DSF import FeatureRectifyModule
+from CLGT import CCT
+from SCLGT import SCT
+from confidence import CA
 
 
 def convt_bn_relu(ch_in, ch_out, kernel=3, stride=2, padding=1, output_padding=1,
